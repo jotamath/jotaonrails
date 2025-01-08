@@ -1,0 +1,21 @@
+<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background-color: rgb(233, 114, 114);">
+    <div class="header-container">
+        <%= link_to "João Costa", root_path, class: "logo" %>
+
+        <button class="mobile-menu-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h18"/>
+            <path d="M3 6h18"/>
+            <path d="M3 18h18"/>
+            </svg>
+        </button>
+
+        <nav class="menu">
+            <%= link_to "Home", "#hero", class: "menu-button", data: { section: "hero" } %>
+            <%= link_to "Sobre", "#about", class: "menu-button", data: { section: "about" } %>
+            <%= link_to "Projetos", "#projects", class: "menu-button", data: { section: "projects" } %>
+            <%= link_to "Contato", "#contact", class: "menu-button", data: { section: "contact" } %>
+        </nav>
+    </div>
+
+</header>

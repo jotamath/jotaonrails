@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="details">
+    <div>Fale comigo:</div>
+    <div class="small">
+      Email: <%= mail_to "01jmnc@gmail.com", "01jmnc@gmail.com", subject: "Vim pelo site e ..." %>
+      <br />
+      Tel: <%= link_to "+55 24 999437613", "tel:+5524999437613" %>
+      <br />
+      Brazil
+    </div>
+  </div>
+  
+  <div class="social">
+    <%= link_to "https://fb.com/joaomatheuscosta" do %>
+      <%= image_tag "svg/facebook.svg", class: "icon", alt: "facebook" %>
+    <% end %>
+    
+    <%= link_to "https://instagram.com/_jmath" do %>
+      <%= image_tag "instagram-svgrepo-com.svg", class: "icon", alt: "instagram" %>
+    <% end %>
+    
+    <%= link_to "https://linkedin.com/in/jotamath" do %>
+      <%= image_tag "linkedin-svgrepo-com.svg", class: "icon", alt: "linkedin" %>
+    <% end %>
+    
+    <%= link_to "https://github.com/jotamath" do %>
+      <%= image_tag "svg/github.svg", class: "icon", alt: "github" %>
+    <% end %>
+  </div>
+  <span>
+    Feito com Ruby on Rails 👽 João Costa 2024
+  </span>
+</footer> 
