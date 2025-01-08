@@ -1,4 +1,4 @@
-#!/bin/bash bash# exit on error
+#!/bin/
 set -o errexit
 
 bundle install
