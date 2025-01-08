@@ -81,6 +81,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
+    url: <%= ENV["DATABASE_URL"] %>
     database: jotaonrails_production
     username: jotaonrails
     password: <%= ENV["JOTAONRAILS_DATABASE_PASSWORD"] %>
